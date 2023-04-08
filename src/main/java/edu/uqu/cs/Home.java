@@ -35,7 +35,21 @@ public class Home{
 
                // List all the cars in the garage. Hint: use method listCars () of class Garage
                //HERE
+        Garage myGarage = new Garage();
+        
+        Car corolla = new Car("Toyota", "Corolla Cross");
+        myGarage.addCar(corolla);
+        myGarage.listCars();
+        
+        Car fusion = new Car("Ford", "Fusion");
+        myGarage.addCar(fusion);
+        
+        myGarage.listCars();
 
+        myGarage.moveOut(fusion);
+        
+        myGarage.listCars();
+}
         }
 
 }
